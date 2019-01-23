@@ -1,0 +1,27 @@
+<div class="product" *ngIf="product">
+  <h3 class="product__title">
+    {{product.id}}
+    {{product.name}}
+    <span>Ocjena {{product.grade}} od 5 (na temelju <em>2</em> recenzije)</span>
+  </h3>
+  <div class="product__content">
+    <img class="product__image" src="../../assets/images/{{product.id}}.jpg" />
+    <p class="product__text">
+      {{product.description}}
+    </p>
+  </div>
+  <div class="product__footer flex-between">
+    <button type="button" class="product__heart"  [ngClass]="{'product__heart--yes': product.favorite}" (click)="favorite()">{{product.favorite ? 'UKLONI IZ FAVORITA' : 'DODAJ U FAVORITE' }}</button>
+    <div class="product__grade">
+        Ocijeni:
+        {{product.grade}}
+        <input type="radio" [value]="1" [name]="product.id" [ngModel]="product.grade"  (ngModelChange)="product.grade = $event" (change)="updateProduct(product)"/>
+        <input type="radio" [value]="2" [name]="product.id" [ngModel]="product.grade"  (ngModelChange)="product.grade = $event" (change)="updateProduct(product)"/>
+        <input type="radio" [value]="3" [name]="product.id" [ngModel]="product.grade"  (ngModelChange)="product.grade = $event" (change)="updateProduct(product)"/>
+        <input type="radio" [value]="4" [name]="product.id" [ngModel]="product.grade"  (ngModelChange)="product.grade = $event" (change)="updateProduct(product)"/>
+        <input type="radio" [value]="5" [name]="product.id" [ngModel]="product.grade"  (ngModelChange)="product.grade = $event" (change)="updateProduct(product)"/>
+    </div>
+  </div>
+  <button type="button" (click)="gotoDetail(product)">Pogledaj</button>
+</div>
+

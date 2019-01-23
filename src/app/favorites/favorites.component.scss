@@ -1,0 +1,49 @@
+.favorites {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  padding: 30px;
+  &__title {
+    font-size: 28px;
+    line-height: 32px;
+    border-bottom: 1px solid lightgray;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    &:after {
+      content: "";
+      background-image: url("../../assets/images/srce.svg");
+      background-size: 100%;
+      width: 20px;
+      height: 20px;
+      right: 0;
+      display: inline-flex;
+      position: absolute;
+      right: 15px;
+      top: 5px;
+    }
+  }
+  &__image {
+    width: 50px;
+    display: inline-flex;
+  }
+  &__list{
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+  }
+  &__product{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+  }
+  &__text{
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 60px);
+      margin-left: 10px;
+  }
+  &__name{
+    font-weight: 500;
+  }
+}

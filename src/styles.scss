@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+// import only the Bootstrap modules you need, e.g.
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/navbar";
+@import "~bootstrap/scss/forms";
+// import your own custom files, e.g.
+@import "/assets/styles/variables";
+@import "/assets/styles/base";
+@import "/assets/styles/utilities";
+

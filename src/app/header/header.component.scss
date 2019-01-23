@@ -1,0 +1,36 @@
+header{
+    background-color: #26523a;
+    ul{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+        padding: 20px 0;
+        width: 100%,
+    }
+    li{
+        display: flex;
+    }
+    .header__link{
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: all 300ms ease-in-out;
+        padding-bottom: 10px;
+        font-weight: 500;
+        margin-top: 10px; //fix za vertical align, posto padding bottom ga dize 10px gore
+        &:hover, &:active{
+            border-bottom: 2px solid white;
+        }
+    }
+    .header__logo{
+        background-repeat: no-repeat;
+        background-image: url('../../assets/images/logo.png');
+        min-width: 150px;
+        background-size: 100%;
+        color: transparent !important;
+        height: 44px;
+    }
+}

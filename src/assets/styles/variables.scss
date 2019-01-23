@@ -1,0 +1,39 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Custom paddings
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$spacing-tiny:         5px;
+$spacing-small:        10px;
+$spacing-medium:       20px;
+$spacing-large:        30px;
+$spacing-extra-large:  50px;
+
+//== Colors
+//
+
+$font-path: "../fonts/";
+$brand-primary-color:    #03A292;
+$brand-bg-color:         #F2F2F2;
+$brand-coffee:           #F7F7F7;
+$brand-grey:             #9C9999;
+$brand-grey-darker:      #757575;
+$brand-grey-medium:      #9B9B9B;
+$brand-spacer:           #F3F3F4;
+$brand-secondary-color:  #293846;
+$gray-base:              #333;
+$gray-darker:            lighten($gray-base, 13.5%); // #222
+$gray-dark:              lighten($gray-base, 20%);   // #333
+$gray:                   lighten($gray-base, 33.5%); // #555
+$gray-light:             lighten($gray-base, 46.7%); // #777
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee
+$brand-text:             $brand-secondary-color;
+$brand-primary:          $brand-primary-color;
+$brand-success:          $brand-primary-color;
+$brand-info:             #5bc0de;
+$brand-warning:          #f0ad4e;
+$brand-danger:           #D0021B;

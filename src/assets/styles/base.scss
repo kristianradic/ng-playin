@@ -1,0 +1,123 @@
+/*
+ * base.less
+ */
+
+/* ----- General ----- */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 100%;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+[class*="col-"] {
+    display: flex;
+	flex-wrap: wrap;
+}
+
+/* ----- Selection ----- */
+::selection {
+	color: white;
+	background: #26523a;
+}
+
+::-moz-selection {
+	color: white;
+	background: #26523a;
+}
+
+div{
+	outline: 0 !important;
+}
+
+/* ----- Headings ----- */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: $spacing-large;
+}
+
+/* ----- Images ----- */
+img {
+	max-width: 100%;
+	height: auto;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+figure {
+	margin: 0 0 0 0;
+}
+
+
+/* ----- Paragraphs ----- */
+p {
+	margin: 0;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+/* ----- Hyperlinks ----- */
+a {
+	color: inherit;
+	font-size: 16px;
+	line-height: 16px;
+	outline: 0;
+	&:hover,
+	&:focus,
+	&:active {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+/* ----- Lists ----- */
+// General
+ul, ol {
+	padding: 0;
+	margin: 0 0 0 0;
+	list-style-type: none;
+	ul, ol {
+	}
+}
+
+// Ordered lists
+ol {
+}
+
+
+li, a{
+	outline: 0 !important;
+}
+/* ----- Buttons ----- */
+button {
+	border: 0;
+	padding: 0;
+	background: transparent;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+/* ----- Horizontal rules ----- */
+hr {
+	margin: 15px 0;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #1F2E3C;
+}
+

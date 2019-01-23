@@ -1,0 +1,42 @@
+<app-header>
+</app-header>
+<app-search>
+</app-search>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8">
+      <div *ngIf="product">
+        <div class="product">
+          <h3 class="product__title">
+            {{product.name}}
+            <span>Ocjena {{product.grade}} od 5 (na temelju <em>2</em> recenzije)</span>
+          </h3>
+          <div class="product__content">
+            <img class="product__image" src="../../assets/images/{{product.id}}.jpg" />
+            <p class="product__text">
+              {{product.description}}
+            </p>
+          </div>
+          <div class="product__footer flex-between">
+            <button type="button" class="product__btn--add" (click)="favorite(product)">Dodaj u favorite</button>
+            <div class="product__grade">
+              Ocijeni:
+              {{product.grade}}
+              <span class="product__grade-star"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--col-sm-9-->
+    </div>
+    <div class="col-sm-3">
+      <app-favorites>
+
+      </app-favorites>
+    </div>
+    <!--col-sm-9-->
+  </div>
+  <!--row-->
+</div>
+<!--container-->
