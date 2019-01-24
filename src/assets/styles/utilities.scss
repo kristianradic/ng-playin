@@ -19,8 +19,18 @@
             width: 70px;
             height: 5px;
             margin-top: 5px;
-            background-color: green;
+            background-color: #26523a;
 
         }
     }
+	input{
+		border: none;
+		font-size: 16px;
+		box-shadow: none;
+		appearance: none;
+		color: #26523a;
+		border-bottom: 2px solid #26523a;
+		padding: 10px 0;
+		outline: 0 !important;
+	}
 }
