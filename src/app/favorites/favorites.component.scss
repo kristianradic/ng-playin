@@ -26,6 +26,7 @@
   &__image {
     width: 50px;
     display: inline-flex;
+    height: 80px;
   }
   &__list{
       list-style-type: none;
@@ -35,6 +36,7 @@
   &__product{
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 15px;
       align-items: center;
   }
   &__text{
@@ -42,8 +44,11 @@
       flex-direction: column;
       width: calc(100% - 60px);
       margin-left: 10px;
+      
   }
   &__name{
     font-weight: 500;
+    margin-bottom: 5px;
+    line-height: 21px;
   }
 }

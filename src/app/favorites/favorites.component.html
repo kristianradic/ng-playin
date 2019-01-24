@@ -1,16 +1,16 @@
 <div class="favorites">
   <h3 class="favorites__title">
-    Favoriti
+    Favorites:
   </h3>
-  <div class="favorites__list">
+  <ul class="favorites__list">
     <li class="favorites__product" *ngFor="let product of favoriteProducts;"> 
-      <img class="favorites__image" src="../../assets/images/1.jpg" />
+      <img class="favorites__image" src="../../assets/images/{{product.id}}.jpg" />
       <div class="favorites__text">
         <p class="favorites__name">
           {{product.name}}
         </p>
-        <span class="favorites__grade">Ocjena {{product.grade}} od 5</span>
+        <span class="favorites__grade">Ocjena <strong>{{product.grade}}</strong> od 5</span>
       </div>
     </li>
-  </div>
+  </ul>
 </div>

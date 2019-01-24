@@ -7,3 +7,20 @@
 .flex-between{
 	justify-content: space-between;
 }
+
+.search-area{
+    margin: 30px 0;
+	margin-bottom: 0;
+    &__title{
+        font-size: 36px;
+        &:after{
+            content: "";
+            display: block;
+            width: 70px;
+            height: 5px;
+            margin-top: 5px;
+            background-color: green;
+
+        }
+    }
+}

@@ -4,4 +4,14 @@ export class Product {
   description: string;
   grade: number;
   favorite: boolean;
+  review: review[];
+}
+
+
+
+export class review {
+  name: string;
+  title: string;
+  grade: number;
+  description: string;
 }

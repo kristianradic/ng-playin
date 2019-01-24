@@ -9,8 +9,6 @@ import { HarryDatabase } from './services/database.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { SearchAreaComponent } from './search-area/search-area.component';
-import { SearchComponent } from './search-area/search/search.component';
 import { ProductComponent } from './product/product.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { FavoritesComponent } from './favorites/favorites.component';
@@ -23,8 +21,6 @@ import { FilterPipe } from './filter.pipe';
   declarations: [
     AppComponent,
     HeaderComponent,
-    SearchAreaComponent,
-    SearchComponent,
     ProductComponent,
     DashboardComponent,
     FavoritesComponent,

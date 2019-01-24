@@ -1,11 +1,23 @@
 <app-header>
 </app-header>
-<app-search>
-</app-search>
+<div class="search-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 flex-between">
+        <h3 class="search-area__title">Knjiga:</h3>
+        <button type="button" class="product__goback" (click)="goHomepage()">Pogledaj</button>
+      </div>
+      <!--col-sm-12-->
+    </div>
+    <!--row-->
+  </div>
+  <!--container-->
+</div>
+<!--search-->
 
 <div class="container">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-12">
       <div *ngIf="product">
         <div class="product">
           <h3 class="product__title">
@@ -18,22 +30,23 @@
               {{product.description}}
             </p>
           </div>
-          <div class="product__footer flex-between">
-            <button type="button" class="product__btn--add" (click)="favorite(product)">Dodaj u favorite</button>
-            <div class="product__grade">
-              Ocijeni:
-              {{product.grade}}
-              <span class="product__grade-star"></span>
+          <div class="product__footer">
+            <h3>Recenzije:</h3>
+            <div class="product__review" *ngFor="let review of product.review">
+              <div class="product__review-header">
+                <img class="product__review-image" src="../../assets/images/review{{review.grade}}.png">
+                <h3>{{review.name}}</h3>
+                <p class="product__review-grade">Ocjena: <strong>{{review.grade}}</strong></p>
+              </div>
+              <div class="product__review-content">
+                  <h4>{{review.title}}</h4>
+                  <p>{{review.description}}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <!--col-sm-9-->
-    </div>
-    <div class="col-sm-3">
-      <app-favorites>
-
-      </app-favorites>
     </div>
     <!--col-sm-9-->
   </div>

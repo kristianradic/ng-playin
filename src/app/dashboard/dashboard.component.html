@@ -1,12 +1,22 @@
 <app-header>
 </app-header>
-<app-search>
-</app-search>
-
-<div class="search-area__search">
-  <input type="search" id="site-search" [(ngModel)]="searchText" placeholder="Search through site content">
-</div><!--search-bar-->
-
+<div class="search-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 flex-between">
+                <h3 class="search-area__title">Lista naslova:</h3>
+                <div class="search-area__search">
+                    <input type="search" id="site-search" [(ngModel)]="searchText" placeholder="Search through site content">
+                </div>
+                <!--search-bar-->
+            </div>
+            <!--col-sm-12-->
+        </div>
+        <!--row-->
+    </div>
+    <!--container-->
+</div>
+<!--search-->
 
 <div class="container">
     <div class="row">
@@ -18,7 +28,7 @@
             <!--for-->
         </div>
         <!--col-sm-9-->
-        <div class="col-sm-3" *ngIf="favoriteProducts.length > 0" >
+        <div class="col-sm-3">
             <app-favorites [favoriteProducts]="favoriteProducts">
 
             </app-favorites>

@@ -33,7 +33,6 @@ export class DashboardComponent implements OnInit {
     let index = this.products.findIndex(x => x.id == product.id);
     this.products[index] = product;
     this.favoriteProducts = this.products.filter(product => product.favorite === true);
-    console.log('called', product);
   }
 
   onSearch(val: string) {
